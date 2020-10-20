@@ -15,7 +15,7 @@ namespace E_Library
         {
             try
             {
-                using (SqlConnection con = new SqlConnection("Data Source=Shubham-Rastogi;Initial Catalog=E-library;Integrated Security=True"))
+                using (SqlConnection con = new SqlConnection("Data Source=elmanage;Initial Catalog=E-library;Integrated Security=True"))
                 {
 
                     string query = "select * from Member_master_login_table where member_id ='" + txtMemberID.Text.Trim() + "' and password ='" + TextBox1.Text.Trim() + "'";
