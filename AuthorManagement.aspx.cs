@@ -16,7 +16,7 @@ namespace E_Library
         {
             try
             {
-                using (SqlConnection con = new SqlConnection("Data Source=Shubham-Rastogi;Initial Catalog=E-library;Integrated Security=True"))
+                using (SqlConnection con = new SqlConnection("Data Source=elmanage;Initial Catalog=E-library;Integrated Security=True"))
                 {
 
                     string query = "select author_name from author_management_tbl  where author_id ='" + auth_no.Text.Trim() + "'";
@@ -55,7 +55,7 @@ namespace E_Library
         {
             try
             {
-                using (SqlConnection con = new SqlConnection("Data Source=Shubham-Rastogi;Initial Catalog=E-library;Integrated Security=True"))
+                using (SqlConnection con = new SqlConnection("Data Source=elmanage;Initial Catalog=E-library;Integrated Security=True"))
                 {
 
                     string query = "insert into author_management_tbl values('"+auth_no.Text.Trim()+"','"+auth_name.Text.Trim()+"')";
@@ -89,7 +89,7 @@ namespace E_Library
         {
             try
             {
-                using (SqlConnection con = new SqlConnection("Data Source=Shubham-Rastogi;Initial Catalog=E-library;Integrated Security=True"))
+                using (SqlConnection con = new SqlConnection("Data Source=elmanage;Initial Catalog=E-library;Integrated Security=True"))
                 {
 
                     string query = "UPDATE author_management_tbl  SET author_name ='"+auth_name.Text.Trim()+"' where author_id ='"+auth_no.Text.Trim()+"'";
@@ -121,7 +121,7 @@ namespace E_Library
         {
             try
             {
-                using (SqlConnection con = new SqlConnection("Data Source=Shubham-Rastogi;Initial Catalog=E-library;Integrated Security=True"))
+                using (SqlConnection con = new SqlConnection("Data Source=elmanage;Initial Catalog=E-library;Integrated Security=True"))
                 {
 
                     string query = "DELETE from  author_management_tbl  where author_id ='" + auth_no.Text.Trim() + "'";
